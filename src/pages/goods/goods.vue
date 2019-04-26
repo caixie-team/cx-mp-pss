@@ -1,114 +1,108 @@
 <template name="goods">
-	<view>
-		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">步骤条</block></cu-custom>
-		<view class="cu-bar bg-white solid-bottom">
-			<view class="action">
-				<text class="cuIcon-title text-orange"></text> 基本用法
-			</view>
-			<view class="action">
-				<button class="cu-btn bg-green shadow" @tap="BasicsSteps">下一步</button>
-			</view>
-		</view>
-		<view class="bg-white padding">
-			<view class="cu-steps">
-				<view class="cu-item" :class="index>basics?'':'text-red'" v-for="(item,index) in basicsList" :key="index">
-					<text :class="'cuIcon-' + item.icon"></text> {{item.name}}
-				</view>
-			</view>
-		</view>
-
-		<view class="bg-white padding margin-top-xs">
-			<view class="cu-steps">
-				<view class="cu-item" :class="index>basics?'':'text-orange'" v-for="(item,index) in basicsList" :key="index">
-					<text :class="index>basics?'cuIcon-title':'cuIcon-' + item.icon"></text> {{item.name}}
-				</view>
-			</view>
-		</view>
-
-		<view class="bg-white padding  margin-top-xs">
-			<view class="cu-steps steps-arrow">
-				<view class="cu-item" :class="index>basics?'':'text-blue'" v-for="(item,index) in basicsList" :key="index">
-					<text :class="'cuIcon-' + item.icon"></text> {{item.name}}
-				</view>
-			</view>
-		</view>
-		<view class="cu-bar bg-white solid-bottom margin-top">
-			<view class="action">
-				<text class="cuIcon-title text-orange"></text> 数字完成
-			</view>
-			<view class="action">
-				<button class="cu-btn bg-green shadow" @tap="NumSteps">下一步</button>
-			</view>
-		</view>
-		<view class="bg-white padding">
-			<view class="cu-steps">
-				<view class="cu-item" :class="index>num?'':'text-blue'" v-for="(item,index) in numList" :key="index">
-					<text class="num" :class="index==2?'err':''" :data-index="index + 1"></text> {{item.name}}
-				</view>
-			</view>
-		</view>
-		<view class="cu-bar bg-white solid-bottom margin-top">
-			<view class="action">
-				<text class="cuIcon-title text-orange"></text> 多级显示
-			</view>
-			<view class="action">
-				<button class="cu-btn bg-green shadow" @tap="ScrollSteps">下一步</button>
-			</view>
-		</view>
-		<scroll-view scroll-x class="bg-white padding response cu-steps steps-bottom" :scroll-into-view="'scroll-' + scroll"
-		 scroll-with-animation>
-			<view class="cu-item padding-lr-xl" :class="index>scroll?'':'text-blue'" v-for="(item,index) in 10" :key="index" :id="'scroll-' + index">
-				Level {{index + 1}} <text class="num" :data-index="index + 1"></text>
-			</view>
-		</scroll-view>
-	</view>
+  <view>
+    <view class="goods-top-bg">
+      <view class="padding-lg flex align-center">
+        <button class="cu-btn round" class="bg-green">
+          <view class="cuIcon-barcode"><text class="padding-left">添加商品</text></view>
+        </button>
+      </view>
+    </view>
+    <view class="cu-bar bg-white solid-bottom margin-top">
+      <view class="action text-title-color">
+        商品列表
+      </view>
+    </view>
+    <view class="cu-list menu padding-bottom-xxxl">
+      <view class="cu-item" v-for="item of 10">
+        <view class="content padding-tb-sm">
+          <view class="text-title-color text-lg padding-top-xs">
+            小目标还没有实现！</view
+          >
+          <view class="text-title-color text-sm">进价: ￥33.00</view>
+          <view class="text-title-color text-sm">售价: ￥55.00</view>
+          <view class="text-time text-sm">库存: 99</view>
+        </view>
+        <view class="action">
+          <view class="cu-tag light padding"
+            ><text class="cuIcon-more"></text
+            >
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				basicsList: [{
-					icon: 'usefullfill',
-					name: '开始'
-				}, {
-					icon: 'radioboxfill',
-					name: '等待'
-				}, {
-					icon: 'roundclosefill',
-					name: '错误'
-				}, {
-					icon: 'roundcheckfill',
-					name: '完成'
-				}, ],
-				basics: 0,
-				numList: [{
-					name: '开始'
-				}, {
-					name: '等待'
-				}, {
-					name: '错误'
-				}, {
-					name: '完成'
-				}, ],
-				num: 0,
-				scroll: 0
-			};
-		},
-		methods: {
-			BasicsSteps() {
-				this.basics= this.basics == this.basicsList.length - 1 ? 0 : this.basics + 1				
-			},
-			NumSteps() {
-				this.num= this.num == this.numList.length - 1 ? 0 : this.num + 1				
-			},
-			ScrollSteps() {
-				this.scroll= this.scroll == 9 ? 0 : this.scroll + 1				
-			}
-		}
-	}
+export default {
+  data() {
+    return {
+      basicsList: [
+        {
+          icon: "usefullfill",
+          name: "开始"
+        },
+        {
+          icon: "radioboxfill",
+          name: "等待"
+        },
+        {
+          icon: "roundclosefill",
+          name: "错误"
+        },
+        {
+          icon: "roundcheckfill",
+          name: "完成"
+        }
+      ],
+      basics: 0,
+      numList: [
+        {
+          name: "开始"
+        },
+        {
+          name: "等待"
+        },
+        {
+          name: "错误"
+        },
+        {
+          name: "完成"
+        }
+      ],
+      num: 0,
+      scroll: 0
+    };
+  },
+  methods: {
+    BasicsSteps() {
+      this.basics =
+        this.basics == this.basicsList.length - 1 ? 0 : this.basics + 1;
+    },
+    NumSteps() {
+      this.num = this.num == this.numList.length - 1 ? 0 : this.num + 1;
+    },
+    ScrollSteps() {
+      this.scroll = this.scroll == 9 ? 0 : this.scroll + 1;
+    }
+  }
+};
 </script>
 
 <style>
-
+.goods-top-bg {
+  background-image: url(https://data.caixie.top/topbg.png);
+  background-size: cover;
+  height: 382rpx;
+  display: flex;
+  justify-content: left;
+  padding-top: 140rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  /* font-weight: 300; */
+  /* text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); */
+}
 </style>
