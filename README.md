@@ -7,6 +7,6 @@
 
 ## 系统部分截图
 
-<img src="https://github.com/caixie-ltd/cx-mp-pss/blob/master/doc/screenshot/share-card2.png?raw=true" title="" width="375">
+<img src="https://github.com/caixie-ltd/cx-mp-pss/blob/master/doc/screenshot/share-card-2.png?raw=true" title="" width="375">
 
 <img src="https://github.com/caixie-ltd/cx-mp-pss/blob/master/doc/screenshot/Landing.png?raw=true" title="" width="375">
