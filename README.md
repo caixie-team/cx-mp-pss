@@ -1,29 +1,10 @@
-# caixie-mp-podcast_es
+采撷进销存小程序
+==========
+一款为商户使用的共享账本小程序, 开发中
 
-## Project setup
-```
-yarn install
-```
+### 小程序码
+<img src="https://github.com/caixie-ltd/cx-mp-pss/blob/master/doc/screenshot/qrcode.png?raw=true" title="" width="180">
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## 系统部分截图
 
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<img src="https://github.com/caixie-ltd/cx-mp-pss/blob/master/doc/screenshot/share-card2.png?raw=true" title="" width="375">
