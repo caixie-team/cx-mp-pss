@@ -3,7 +3,9 @@
     <view class="goods-top-bg">
       <view class="padding-lg flex align-center">
         <button class="cu-btn round bg-green">
-          <view class="cuIcon-barcode"><text class="padding-left">添加商品</text></view>
+          <view class="cuIcon-barcode"
+            ><text class="padding-left">添加商品</text></view
+          >
         </button>
       </view>
     </view>
@@ -23,14 +25,9 @@
           <view class="text-time text-sm">库存: 99</view>
         </view>
         <view class="action">
-<button class="cu-btn round">
-          <view class="cuIcon-more"></view>
-        </button>
-
-          <!-- <view class="cu-tag light padding"
-            ><text class="cuIcon-more"></text
-            >
-          </view> -->
+          <button class="cu-btn round">
+            <view class="cuIcon-more"></view>
+          </button>
         </view>
       </view>
     </view>
@@ -40,56 +37,9 @@
 <script>
 export default {
   data() {
-    return {
-      basicsList: [
-        {
-          icon: "usefullfill",
-          name: "开始"
-        },
-        {
-          icon: "radioboxfill",
-          name: "等待"
-        },
-        {
-          icon: "roundclosefill",
-          name: "错误"
-        },
-        {
-          icon: "roundcheckfill",
-          name: "完成"
-        }
-      ],
-      basics: 0,
-      numList: [
-        {
-          name: "开始"
-        },
-        {
-          name: "等待"
-        },
-        {
-          name: "错误"
-        },
-        {
-          name: "完成"
-        }
-      ],
-      num: 0,
-      scroll: 0
-    };
+    return {};
   },
-  methods: {
-    BasicsSteps() {
-      this.basics =
-        this.basics == this.basicsList.length - 1 ? 0 : this.basics + 1;
-    },
-    NumSteps() {
-      this.num = this.num == this.numList.length - 1 ? 0 : this.num + 1;
-    },
-    ScrollSteps() {
-      this.scroll = this.scroll == 9 ? 0 : this.scroll + 1;
-    }
-  }
+  methods: {}
 };
 </script>
 
