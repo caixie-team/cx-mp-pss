@@ -1,5 +1,5 @@
 <template name="statistics">
-  <view class="padding-bottom-xxxl">
+  <view>
     <image
       src="https://cdn.nlark.com/yuque/0/2019/png/280373/1552908032971-assets/web-upload/e795fee4-c6cd-4951-b7d8-134aa9cd7c6b.png"
       mode="widthFix"
@@ -10,13 +10,13 @@
     <view class="grid col-2 solid-bottom">
       <view class="padding-sm">
         <view class="padding radius text-center">
-          <view class="text-xl  text-price">{{ todayTotal }}</view>
+          <view class="text-xl text-bold text-price">{{ todayTotal }}</view>
           <view class="margin-top-sm text-sm">今日销售额</view>
         </view>
       </view>
       <view class="padding-sm">
         <view class="padding radius text-center">
-          <view class="text-xl text-price  text-green">{{
+          <view class="text-xl text-bold text-price  text-green">{{
             todayProfit
           }}</view>
           <view class="margin-top-sm text-green text-sm">今日利润</view>
@@ -28,13 +28,13 @@
     <view class="grid col-2 solid-bottom">
       <view class="padding-sm">
         <view class="padding radius text-center">
-          <view class="text-xl  text-price">{{ weekTotal }}</view>
+          <view class="text-xl text-bold text-price">{{ weekTotal }}</view>
           <view class="margin-top-sm text-sm">本周销售额</view>
         </view>
       </view>
       <view class="padding-sm">
         <view class="padding radius text-center light">
-          <view class="text-xl  text-green text-price">{{ weekProfit }}</view>
+          <view class="text-xl text-bold text-green text-price">{{ weekProfit }}</view>
           <view class="margin-top-sm text-green text-sm">本周利润</view>
         </view>
       </view>
@@ -44,13 +44,13 @@
     <view class="grid col-2 solid-bottom">
       <view class="padding-sm">
         <view class="padding radius text-center">
-          <view class="text-xl  text-price">{{ monthTotal }}</view>
+          <view class="text-xl text-bold text-price">{{ monthTotal }}</view>
           <view class="margin-top-sm text-sm">本月销售额</view>
         </view>
       </view>
       <view class="padding-sm">
         <view class="padding radius text-center">
-          <view class="text-xl  text-green text-price">{{
+          <view class="text-xl text-bold text-green text-price">{{
             monthProfit
           }}</view>
           <view class="margin-top-sm text-green text-sm">本月利润</view>
@@ -62,13 +62,13 @@
     <view class="grid col-2">
       <view class="padding-sm">
         <view class="padding radius text-center">
-          <view class="text-xl  text-price">{{ yearTotal }}</view>
+          <view class="text-xl text-bold text-price">{{ yearTotal }}</view>
           <view class="margin-top-sm text-sm">本年销售额</view>
         </view>
       </view>
       <view class="padding-sm">
         <view class="padding radius text-center">
-          <view class="text-xl  text-green text-price">{{
+          <view class="text-xl text-bold text-green text-price">{{
             yearProfit
           }}</view>
           <view class="margin-top-sm text-green text-sm">本年利润</view>

@@ -1,85 +1,51 @@
 <template name="my">
-<scroll-view scroll-y class="scrollPage">
+  <scroll-view scroll-y class="scrollPage">
     <view class="my-top-bg">
       <image src="/static/logo2.png" class="png" mode="widthFix"></image>
       <text class="text-xl text-white">铜仁武陵山优品茶店</text>
-	  <view class="margin-top-sm">
-      	<text class="text-white">龙建林</text>
+      <view class="margin-top-sm">
+        <text class="text-gray text-black" style="font-weight:600;">龙建林</text>
       </view>
     </view>
-    <!-- <view class="cu-list menu card-menu sm-border">
-      <view class="cu-item arrow">
+    <view class="cu-list menu card-menu sm-border">
+      <view class="cu-item arrow my-item-bg">
         <navigator
           class="content"
           url="../../my/salerecord/index"
           hover-class="none"
         >
           <text class="cuIcon-order text-blue"></text>
-          <text class="text-grey">售出记录</text>
+          <text class="text-black">售出记录</text>
         </navigator>
       </view>
-	  <view class="cu-item arrow">
+      <view class="cu-item arrow my-item-bg">
         <navigator
           class="content"
           url="../../my/salerecord/index"
           hover-class="none"
         >
           <text class="cuIcon-friend text-blue"></text>
-          <text class="text-grey">店员管理</text>
+          <text class="text-black">店员管理</text>
         </navigator>
       </view>
-	  <view class="cu-item arrow">
+      <view class="cu-item arrow my-item-bg">
         <navigator
           class="content"
           url="../../my/salerecord/index"
           hover-class="none"
         >
           <text class="cuIcon-shop text-orange"></text>
-          <text class="text-grey">切换店铺</text>
+          <text class="text-black">切换店铺</text>
         </navigator>
       </view>
-      <view class="cu-item arrow">
+      <view class="cu-item arrow my-item-bg">
         <button class="cu-btn content" open-type="feedback">
           <text class="cuIcon-writefill text-green"></text>
-          <text class="text-grey">意见反馈</text>
+          <text class="text-black">意见反馈</text>
         </button>
       </view>
-    </view> -->
-
-	<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
-    <view class="cu-item arrow">
-      <view class="content" bindtap="CopyLink" data-link="https://github.com/weilanwl/ColorUI">
-        <text class="cuIcon-github text-grey"></text>
-        <text class="text-grey">GitHub</text>
-      </view>
     </view>
-    <view class="cu-item arrow">
-      <navigator class="content" url="/pages/about/log/log" hover-class="none">
-        <text class="cuIcon-formfill text-green"></text>
-        <text class="text-grey">日志</text>
-      </navigator>
-    </view>
-    <view class="cu-item arrow">
-      <view class="content" bindtap="showQrcode">
-        <text class="cuIcon-appreciatefill text-red"></text>
-        <text class="text-grey">赞赏支持</text>
-      </view>
-    </view>
-    <view class="cu-item arrow">
-      <button class="cu-btn content" open-type="feedback">
-        <text class="cuIcon-writefill text-cyan"></text>
-        <text class="text-grey">意见反馈</text>
-      </button>
-    </view>
-    <view class="cu-item arrow">
-      <navigator class="content" url="/pages/about/test/list" hover-class="none">
-        <text class="cuIcon-creativefill text-orange"></text>
-        <text class="text-grey">Bug测试</text>
-      </navigator>
-    </view>
-  </view>
-  <view class="cu-tabbar-height"></view>
- </scroll-view>
+  </scroll-view>
 </template>
 
 <script>
@@ -92,7 +58,7 @@ export default {
 </script>
 
 <style>
-.page{
+.page {
   padding-bottom: 100rpx;
 }
 .my-top-bg {
@@ -118,5 +84,9 @@ export default {
 .my-top-bg text {
   opacity: 0.8;
   padding-top: 30rpx;
+}
+
+.my-item-bg {
+  background-color: #F2F2F2 !important;
 }
 </style>

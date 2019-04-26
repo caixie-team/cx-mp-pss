@@ -18,7 +18,7 @@ body {
 	--yellow: #fbbd08;
 	--olive: #8dc63f;
 	--green: #39b54a;
-	--cyan: #1cbbb4;
+	--cyan: #141818;
 	--blue: #0081ff;
 	--purple: #6739b6;
 	--mauve: #9c26b0;
@@ -92,7 +92,6 @@ image {
 .radius {
 	border-radius: 6upx;
 }
-
 .radius-ms {
 	border-radius: 10upx;
 }
@@ -100,7 +99,6 @@ image {
 .radius-lg {
 	border-radius: 20upx;
 }
-
 /* ==================
           图片
  ==================== */
@@ -1115,7 +1113,7 @@ button.icon.lg {
 
 .cu-avatar-group .cu-avatar {
 	margin-left: -20upx;
-	/* border: 10upx solid var(--ghostWhite); */
+	/* border: 4upx solid var(--ghostWhite); */
 	vertical-align: middle;
 }
 
@@ -1166,7 +1164,7 @@ button.icon.lg {
 	align-items: center;
 	display: flex;
 	font-size: 20upx;
-	color: var(--white);
+	color: var(--);
 	text-indent: 10upx;
 }
 
@@ -1819,7 +1817,7 @@ button.icon.lg {
 	line-height: 64upx;
 	height: 64upx;
 	font-size: 24upx;
-	color: var(--black);
+	color: var(--);
 	flex: 1;
 	display: flex;
 	align-items: center;
@@ -2230,7 +2228,7 @@ button.icon.lg {
 
 .cu-timeline>.cu-item>.content:not([class*="bg-"]) {
 	background-color: var(--ghostWhite);
-	color: var(--black);
+	color: var(--);
 }
 
 .cu-timeline>.cu-item>.content+.content {
@@ -3422,12 +3420,6 @@ scroll-view.cu-steps .cu-item {
 	padding-bottom: 50upx;
 }
 
-.padding-bottom-xxl {
-	padding-bottom: 80upx;
-}
-.padding-bottom-xxxl {
-	padding-bottom: 100upx;
-}
 .padding-left-xs {
 	padding-left: 10upx;
 }
@@ -3964,7 +3956,7 @@ scroll-view.cu-steps .cu-item {
 }
 
 .text-xxxl {
-	font-size: 52upx;
+	font-size: 60upx;
 }
 
 .text-sl {
@@ -4107,15 +4099,4 @@ scroll-view.cu-steps .cu-item {
 .line-white,
 .lines-white {
 	color: var(--white);
-}
-
-
-/* text */
-.text-custom {
-	opacity: 0.7;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	letter-spacing: normal;
-	color: var(--black);
 }
