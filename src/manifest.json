@@ -1,5 +1,5 @@
 {
-  "name": "cx-mp-podcast",
+  "name": "cx-mp-pss",
   "appid": "__UNI__B062461",
   "description": "",
   "versionName": "1.0.0",
@@ -55,10 +55,11 @@
   /* 快应用特有相关 */
   "mp-weixin": {
     /* 小程序特有相关 */
-    "appid": "wx53d04eb9e7c3d68d",
+    "appid": "wxf3af55cc04d170a3",
     "setting": {
       "urlCheck": false,
-      "postcss": false
+      "postcss": false,
+      "es6" : true
     },
     "usingComponents": true
   }
