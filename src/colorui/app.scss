@@ -1,0 +1,74 @@
+//
+// 1. Color System
+// ========================================================================== */
+
+$grey-100: #f5f8fa !default;
+$grey-200: #f2f4f7 !default; // #F7F9FB
+$grey-300: #e6eaee !default; // eaeef1
+$grey-400: #dfe3e9 !default; // dfe1e5 E3E8EF
+$grey-500: #bbc5d5 !default;
+$grey-600: #b7c0cd !default; // c2cad4
+$grey-700: #9fa9ba !default;
+$grey-800: #7f8fa4 !default; // 7f8fa4
+
+$gunmetal-100: #475364 !default;
+$gunmetal-200: #354052 !default; // main
+$gunmetal-300: #2d3848 !default;
+$gunmetal-400: #273142 !default;
+$gunmetal-500: #1d2531 !default;
+
+$white: #fff !default;
+$black: #000 !default;
+
+$blue-100: #86CAFF !default;
+$blue-200: #53b2f9 !default;
+$blue-300: #2ea1f8 !default; // main
+$blue-400: #1990ea !default;
+$blue-500: #1a91eb !default; // 1991eb
+
+$green-100: #65dc52 !default;
+$green-200: #1bb934 !default;
+$green-300: #39b54a !default;
+$green-400: #34aa44 !default; //36af47
+$green-500: #249533 !default;
+
+$purple-100: #9d8fe3 !default;
+$purple-200: #a388e3 !default;
+$purple-300: #886ce6 !default;
+$purple-400: #8261e6 !default;
+$purple-500: #7d5be2 !default;
+
+$red-100: #f95359 !default;
+$red-200: #ed1c24 !default;
+$red-300: #d35847 !default;
+$red-400: #ed1c24 !default;
+$red-500: #db161e !default;
+
+$orange-100: #f8c95d !default;
+$orange-200: #f7bf47 !default;
+$orange-300: #fd9a18 !default; //F7981C
+$orange-400: #ff7800 !default;
+$orange-500: #f16911 !default;
+
+// states
+$color-mute: $grey-800 !default;
+$color-success: $green-200 !default;
+$color-info: $blue-300 !default;
+$color-warning: $orange-300 !default;
+$color-danger: $red-400 !default;
+$color-fancy: $purple-400 !default;
+
+// gradients
+$gradient-blue: $blue-300, $blue-400 !default;
+$gradient-green: $green-300, $green-400 !default;
+$gradient-purple: $purple-300, $purple-500 !default;
+$gradient-red: $red-100, $red-300 !default;
+$gradient-orange: $orange-300, $orange-500 !default;
+
+// brands
+$color-facebook: #2492E4 !default;
+$color-twitter: #0AF !default;
+$color-pinterest: #E30F27 !default;
+$color-behance: #187AC6 !default;
+$color-dribbble: #ea4c89 !default;
+$color-linkedin: #222 !default;

@@ -8,7 +8,7 @@
       </view>
     </view>
     <view class="cu-list menu card-menu sm-border">
-      <view class="cu-item arrow my-item-bg">
+      <view class="cu-item arrow">
         <navigator
           class="content"
           url="../../my/salerecord/index"
@@ -18,7 +18,7 @@
           <text class="text-black">售出记录</text>
         </navigator>
       </view>
-      <view class="cu-item arrow my-item-bg">
+      <view class="cu-item arrow">
         <navigator
           class="content"
           url="../../my/salerecord/index"
@@ -28,7 +28,7 @@
           <text class="text-black">店员管理</text>
         </navigator>
       </view>
-      <view class="cu-item arrow my-item-bg">
+      <view class="cu-item arrow">
         <navigator
           class="content"
           url="../../my/salerecord/index"
@@ -38,7 +38,7 @@
           <text class="text-black">切换店铺</text>
         </navigator>
       </view>
-      <view class="cu-item arrow my-item-bg">
+      <view class="cu-item arrow">
         <button class="cu-btn content" open-type="feedback">
           <text class="cuIcon-writefill text-green"></text>
           <text class="text-black">意见反馈</text>

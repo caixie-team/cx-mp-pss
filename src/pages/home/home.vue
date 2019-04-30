@@ -64,24 +64,22 @@
       </view>
     </view>
 
-    <view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="cu-bar margin-top">
       <view class="action text-title-color">
         今天
       </view>
     </view>
-    <view class="cu-list menu">
-      <view class="cu-item" v-for="item of 10">
+    <view class="cu-list menu card-menu radius" v-for="item of 10">
+      <view class="cu-item">
         <view class="content padding-tb-sm">
-          <view class="text-time text-sm">2019/04/09</view>
-          <view class="text-title-color text-lg padding-top-xs">
-            小目标还没有实现！</view
+          <view class="text-title-color text-lg"> 小目标还没有实现！</view>
+          <view class="text-title-color text-sm  padding-top-xs"
+            >2019/04/09</view
           >
         </view>
         <view class="action">
-          <view class="cu-tag bg-green light padding"
-            ><text class="cuIcon-add padding-right-xs"></text
-            ><text class="text-price">884.90</text>
-          </view>
+          <text class="cuIcon-add padding-right-xs text-sm text-green"></text
+          ><text class="text-price text-green">884.90</text>
         </view>
       </view>
     </view>
@@ -93,15 +91,13 @@ export default {
   data() {
     return {};
   },
-  methods: {
-      
-  }
+  methods: {}
 };
 </script>
 
 <style>
 page {
-  padding-bottom: 100upx;
+  padding-bottom: 130upx;
 }
 
 .top-bg {
@@ -133,6 +129,6 @@ page {
 }
 
 .text-title-color {
-  color: #333333;
+  color: #666666;
 }
 </style>

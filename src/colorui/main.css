@@ -30,6 +30,7 @@ body {
 	--gray: #aaaaaa;
 	--ghostWhite: #f1f1f1;
 	--white: #ffffff;
+	--customWhite:#F7F7F7;
 	/* 浅色 */
 	--redLight: #fadbd9;
 	--orangeLight: #fde6d2;
@@ -67,7 +68,7 @@ body {
 	--grayShadow: rgba(114, 130, 138, 0.2);
 	--blackShadow: rgba(26, 26, 26, 0.2);
 
-	background-color: var(--white);
+	background-color: var(--customWhite);
 	font-size: 28upx;
 	color: var(--black);
 	font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -90,7 +91,7 @@ image {
 }
 
 .radius {
-	border-radius: 6upx;
+	border-radius: 6upx !important;
 }
 .radius-ms {
 	border-radius: 10upx;
@@ -1474,7 +1475,8 @@ button.icon.lg {
 	min-height: 100upx;
 	background-color: var(--white);
 	justify-content: space-between;
-	align-items: center
+	align-items: center;
+	opacity: 0.8;
 }
 
 .cu-list.menu>.cu-item:last-child:after {

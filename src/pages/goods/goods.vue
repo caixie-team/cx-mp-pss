@@ -9,12 +9,12 @@
         </button>
       </view>
     </view>
-    <view class="cu-bar bg-white solid-bottom">
+    <view class="cu-bar">
       <view class="action text-title-color">
         商品列表
       </view>
     </view>
-    <view class="cu-list menu">
+    <view class="cu-list menu  card-menu radius">
       <view class="cu-item" v-for="item of 10">
         <view class="content padding-tb-sm">
           <view class="text-title-color text-lg padding-top-xs">
